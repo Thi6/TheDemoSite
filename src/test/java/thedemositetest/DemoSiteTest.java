@@ -1,6 +1,7 @@
 package thedemositetest;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
@@ -49,7 +50,7 @@ public class DemoSiteTest {
 		
 		Thread.sleep(1000);
 		
-		assertEquals("**Successful Login**", checkElement.getText());
+		assertTrue(checkElement.isDisplayed());
 	}
 	
 
